@@ -1,0 +1,127 @@
+body {
+  overflow-x: hidden;
+}
+
+.App {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  color: #4a4a4a;
+}
+
+.user {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #b3e3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+}
+
+.paginationBttns {
+  height: 40px;
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #0073c5;
+  color: #0073c5;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #0073c5;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #0073c5;
+}
+
+.paginationDisabled a,
+.paginationDisabled a:hover {
+  color: white;
+  background-color: lightgray;
+  border-color: transparent;
+}
+
+.search-app-container {
+  display: flex;
+  justify-content: center;
+}
+
+input.search-input {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-radius: 0.25em;
+  border: 1px solid silver;
+  color: #4a4a4a;
+}
+
+input.search-input:focus-visible {
+  border: 1px solid darkgray;
+  border-radius: 0.25em;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-submit-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.c-tile__link {
+  text-decoration: none;
+}
+
+.c-tile__title {
+  color: #0073c5;
+  text-decoration: none;
+}
+
+.search-results section {
+  width: 32.33% !important;
+  display: inline-block;
+  margin: 10px 5px;
+  box-sizing: border-box;
+}
+
+.search-results {
+  position: relative;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+.c-tile--square .c-tile__link, .c-tile--square .c-tile__link::before {
+  overflow: hidden;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .App {
+    width: 100%;
+  }
+  .paginationBttns {
+    flex-wrap: wrap;
+    height: 100px;
+    padding: 0;
+  }
+  .paginationBttns li {
+    margin: 25px 0;
+  }
+}
